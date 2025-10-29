@@ -1,9 +1,11 @@
-﻿using Tyuiu.Programmation.Sprint2.Task0.V15.Lib;
-internal class Program
+﻿using System;
+using Tyuiu.Programmation.Sprint2.Task0.V15.Lib;
+
+namespace Tyuiu.Programmation.Sprint2.Task0.V15
 {
-   
-   
-        static void Main(string[] args)
+    internal class Program
+    {
+        private static void Main(string[] args)
         {
             Console.Title = "Sprint 2 - Task 0 - V15";
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -21,7 +23,7 @@ internal class Program
             Console.Write("Entrez la valeur de y : ");
             int y = Convert.ToInt32(Console.ReadLine());
 
-            // Création de l’objet DataService
+            // Création de l'objet DataService
             DataService ds = new DataService();
 
             // Appel de la méthode GetCompareOperations
@@ -48,5 +50,4 @@ internal class Program
             Console.ReadKey();
         }
     }
-
-
+}
